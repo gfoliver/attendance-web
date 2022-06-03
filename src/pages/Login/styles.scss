@@ -1,0 +1,66 @@
+.Login {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .card {
+        padding: 2rem;
+        border-radius: .5rem;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 3rem;
+    }
+
+    .inputWrap {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+        background-color: #E7E7E7;
+        border: none;
+    }
+
+    button {
+        display: block;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        border: none;
+        background-color: #9E1824;
+        border-radius: .5rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(#9E1824, 5%);
+        }
+    }
+}
